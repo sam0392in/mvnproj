@@ -10,7 +10,7 @@ public class Greeter {
    */
   public Greeter() {
 
-  }
+  
 
   //TODO: Add javadoc comment
   public String greet(String someone) {
