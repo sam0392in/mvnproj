@@ -7,6 +7,6 @@ phases:
 
 artifacts:
   files:
-    - /webapp/target/**
+    - webapp/target/**
     - scripts/**
     - appspec.yml
