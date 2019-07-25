@@ -7,5 +7,6 @@ phases:
 
 artifacts:
   files:
-    - '**/*'
-    
+    - /webapp/target/webapp.war
+    - scripts
+    - appspec.yml
