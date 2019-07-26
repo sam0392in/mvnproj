@@ -4,7 +4,7 @@ set -e
 
 CATALINA_HOME=/opt/tomcat/
 TEMP_STAGING_DIR=/tmp/codedeploy-staging/
-WAR_STAGED_LOCATION=$TEMP_STAGING_DIR/webapps/target/webapp.war
+WAR_STAGED_LOCATION=$TEMP_STAGING_DIR/webapp/target/webapp.war
 
 mkdir -p $TEMP_STAGING_DIR
 # Remove old application artifacts
