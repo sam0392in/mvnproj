@@ -3,7 +3,7 @@
 
 .bg-img{
   /* The image used */
-    background-image: url("/project/templates/login.jpg");
+    background-image: url("login.jpg");
 
   /* Control the height of the image */
     min-height: 600px;
