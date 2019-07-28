@@ -2,6 +2,6 @@
 
 CATALINA_HOME=/opt/tomcat
 
-chown -R tomcat:tomcat $CATALINA_HOME
-chmod -R 755 $CATALINA_HOME
+chown -R tomcat:tomcat $CATALINA_HOME/webapps/
+chmod -R 755 $CATALINA_HOME/webapps/
 

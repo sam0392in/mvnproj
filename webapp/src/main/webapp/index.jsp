@@ -160,7 +160,7 @@
 
 <div class="bg-img">
 
-<h1><span>Sam's Digital Liberary</span></h1>
+<h1><span>Sam's Digital Library</span></h1>
 
 <form action = "http://35.154.22.15:5000/home" method = "POST" class="form-style-10">
     <div class="section">Just Need Your Name To Greet You</div>
