@@ -87,5 +87,5 @@ EOF
 
 
 systemctl daemon-reload
-service tomcat start
+#service tomcat start
 

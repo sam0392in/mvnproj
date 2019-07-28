@@ -9,7 +9,7 @@ WAR_STAGED_LOCATION=$TEMP_STAGING_DIR/webapp/target/webapp.war
 mkdir -p $TEMP_STAGING_DIR
 # Remove old application artifacts
 if [[ -f $CATALINA_HOME/webapps/*.war ]]; then
-    rm $CATALINA_HOME/webapps/*.war
+    rm -rf  $CATALINA_HOME/webapps/*.war
 fi
 
 # Copy the WAR file to the webapps directory

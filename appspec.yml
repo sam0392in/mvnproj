@@ -12,6 +12,10 @@ hooks:
     - location: scripts/install-tomcat.sh
       timeout: 100
       runas: root
+  Install:
+    - location: scripts/install-application.sh
+      timeout: 100
+      runas: root
   AfterInstall:
     - location: scripts/change_permissions.sh      
       timeout: 100
