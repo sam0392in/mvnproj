@@ -15,7 +15,7 @@ sudo rm -rf  $CATALINA_HOME/webapps/*.war
 #fi
 
 # Copy the WAR file to the webapps directory
-sudo cp /tmp/codedeploy-staging/webapp/target/*.war $CATALINA_HOME/webapps/
+sudo ln -s $WAR_STAGED_LOCATION $CATALINA_HOME/webapps
 sudo chmod 755 $CATALINA_HOME/webapps/*.war
 sudo chown tomcat:tomcat $CATALINA_HOME/webapps/*.war
 

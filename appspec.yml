@@ -1,30 +1,30 @@
 version: 0.0
 os: linux
 files:
-  - source: /webapp/target/*.war
-    destination: /opt/tomcat/webapps/
   - source: /
-    destination: /tmp/codedeploy-staging/
+    destination: /tmp/codedeploy-staging
 hooks:
   ApplicationStop:
     - location: scripts/stop-application.sh
-      timeout: 100
+      timeout: 300
       runas: root
   BeforeInstall:
     - location: scripts/install-tomcat.sh
-      timeout: 100
+      timeout: 300
       runas: root
   Install:
     - location: scripts/install-application.sh
-      timeout: 100
+      timeout: 300
       runas: root
   AfterInstall:
     - location: scripts/change_permissions.sh      
-      timeout: 100
+      timeout: 300
       runas: root
   ApplicationStart:
     - location: scripts/start-application.sh
-      timeout: 100
+      timeout: 300
       runas: root
   ValidateService:
     - location: scripts/healthcheck.sh
+      timeout: 300
+      runas: root
