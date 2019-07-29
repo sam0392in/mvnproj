@@ -1,6 +1,8 @@
 version: 0.0
 os: linux
 files:
+  - source: /webapp/target/*.war
+    destination: /opt/tomcat/webapps/
   - source: /
     destination: /tmp/codedeploy-staging/
 hooks:
