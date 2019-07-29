@@ -10,9 +10,6 @@ hooks:
       runas: root
   BeforeInstall:
     - location: scripts/install-tomcat.sh
-      timeout: 300
-      runas: root
-  Install:
     - location: scripts/install-application.sh
       timeout: 300
       runas: root
