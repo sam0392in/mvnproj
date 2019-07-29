@@ -7,6 +7,7 @@ TEMP_STAGING_DIR=/tmp/codedeploy-staging
 WAR_STAGED_LOCATION=$TEMP_STAGING_DIR/webapp/target/*.war
 
 mkdir -p $TEMP_STAGING_DIR
+chown -R tomcat:tomcat $WAR_STAGED_LOCATION
 
 # Remove old application artifacts
 #if [[ -f $CATALINA_HOME/webapps/*.war ]]; then
